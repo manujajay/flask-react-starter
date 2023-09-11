@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            text-align: center;
+            padding: 100px;
+            background-color: #f1f1f1;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+
+    <script type="text/javascript">
+        // Your React component here
+        function LandingPage() {
+            return (
+                <div>
+                    <div className="header">
+                        <h1>Welcome to Our Website</h1>
+                    </div>
+                    <div className="container">
+                        <h2>About Us</h2>
+                        <p>We are a company that does amazing things.</p>
+                        <button className="button">Learn More</button>
+                    </div>
+                    <div className="container">
+                        <h2>Contact</h2>
+                        <p>Email: info@example.com</p>
+                        <p>Phone: +1 (123) 456-7890</p>
+                    </div>
+                </div>
+            );
+        }
+
+        // Render React component
+        ReactDOM.render(
+            <LandingPage />,
+            document.getElementById('app')
+        );
+    </script>
+
+</body>
+</html>
